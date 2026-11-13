@@ -1,30 +1,52 @@
-# Araştırma Yöntem Ve Teknikleri
-# 📊 Kahve/Enerji İçeceği Tüketimi ile Uyku Kalitesi ve Odaklanma Arasındaki İlişki
+# ☕ Global Coffee Consumption & Health Analysis
+**Araştırma Yöntem ve Teknikleri – Dönem Projesi**
 
-## 📌 Proje Özeti ve Problem Durumu
-Üniversite öğrencileri ve genç yetişkinler arasında kafein içeren içeceklerin (kahve ve enerji içecekleri) kullanımı oldukça yaygındır[cite: 219]. Ancak yüksek kafein tüketiminin gecelik uyku kalitesini düşürdüğü ve gün içindeki odaklanma/konsantrasyon sürelerini etkilediği düşünülmektedir[cite: 219]. Bu araştırmada, kafein tüketimi ile uyku kalitesi ve odaklanma seviyeleri arasındaki ilişki açık veri seti kullanılarak nicel yöntemlerle incelenecektir[cite: 219].
+Bu depo, küresel ölçekte kahve ve kafein tüketim alışkanlıklarının uyku kalitesi, stres düzeyi ve temel sağlık göstergeleri üzerindeki etkilerini inceleyen araştırma projesinin dokümantasyonunu, veri analizi kodlarını ve bulgularını içermektedir.
 
-## 📂 Veri Seti Bilgileri
-* **Veri Seti Adı:** Global Coffee Health Dataset[cite: 221]
-* **Veri Seti Bağlantısı:** [Kaggle - Global Coffee Health Dataset](https://www.kaggle.com/datasets/laksikatharmalingam/global-coffee-health-dataset)[cite: 221]
-* **Veri Kaynağı:** Katılımcılardan toplanmış ikincil veridir (Gerçek veridir)[cite: 219, 221].
-* **Lisans:** CC BY 4.0 / Public Domain[cite: 98]
-* **İncelenen Değişkenler:**
-  * `Daily Coffee Intake / Caffeine Levels` (Kafein/Kahve Tüketimi)[cite: 221]
-  * `Sleep Duration and Quality` (Uyku Süresi ve Kalitesi)[cite: 221]
-  * `Focus / Productivity Metrics` (Odaklanma/Verimlilik Göstergeleri)[cite: 221]
+---
 
-## 🎯 Araştırma Sorusu ve Hipotezler
-* **Temel Araştırma Sorusu:** Günlük kafein (kahve/enerji içeceği) tüketim miktarı ile uyku kalitesi ve odaklanma düzeyi arasında istatistiksel olarak anlamlı bir ilişki var mıdır?[cite: 219]
-* **Hipotezler:**
-  * **H1:** Günlük kafein tüketim miktarı arttıkça uyku kalitesi puanı anlamlı şekilde düşer ($r < 0, p < 0.05$)[cite: 14].
-  * **H2:** Günlük kafein tüketim miktarı ile odaklanma düzeyi puanı arasında istatistiksel olarak anlamlı bir ilişki vardır ($p < 0.05$)[cite: 14].
-  * **H0 (Sıfır Hipotezi):** Günlük kafein tüketimi ile uyku kalitesi ve odaklanma düzeyi arasında anlamlı bir ilişki yoktur ($p \ge 0.05$)[cite: 14].
+## 📌 Projenin Amacı ve Kapsamı
+Günümüzde kahve tüketimi günlük yaşamın ayrılmaz bir parçası haline gelmiştir. Bu çalışmanın amacı, açık kaynaklı **Global Coffee Health Dataset** verilerini kullanarak günlük kafein alımının bireylerin uyku düzeni, stres seviyesi ve fizyolojik sağlık parametreleri ile olan ilişkisini nicel veri analizi yöntemleriyle incelemek ve görselleştirmektir.
 
-## ⚙️ Yöntem ve Analiz
-* **Analiz Yöntemi:** Python (Google Colab) ortamında normallik testleri sonrasında **Pearson** veya **Spearman Korelasyon Analizi** uygulanacaktır.
-* **Kontrol Değişkenleri:** Ekran süresi, yaş ve stres düzeyi karıştırıcı değişken olarak dikkate alınacaktır[cite: 10].
-* **Metodolojik Not:** Korelasyon analizi neden-sonuç ilişkisi (causality) göstermez; değişkenlerin birlikte değişim eğilimini inceler[cite: 10].
+---
 
-## 👤 Araştırmacı
-* **[Sefa Yıldırım]:** Araştırma Tasarımı, Veri Analizi ve Raporlama
+## ❓ Araştırma Soruları
+
+### Araştırma Sorusu Adayları
+1. **Uyku ve Kafein Odağı:** Günlük kahve ve kafein tüketim miktarı, bireylerin uyku süresi ve uyku kalitesi düzeyini istatistiksel olarak anlamlı bir şekilde etkilemekte midir?
+2. **Stres ve Fizyolojik Sağlık Odağı:** Yüksek düzeyde kafein tüketimi ile algılanan stres seviyesi ve kalp atış hızı arasında pozitif yönlü bir ilişki bulunmakta mıdır?
+3. **Yaşam Tarzı Etkileşimi:** Yaş, fiziksel aktivite ve yaşam tarzı faktörleri dikkate alındığında, günlük kahve tüketimi genel sağlık göstergelerini yordamakta mıdır?
+
+### ✅ Kesinleşen Ana Araştırma Sorusu
+> *"Küresel ölçekte bireylerin günlük kahve/kafein tüketim miktarları ile uyku kalitesi, stres düzeyi ve temel kardiyovasküler sağlık göstergeleri arasında anlamlı bir ilişki var mıdır?"*
+
+### Hipotezler
+* **$H_0$ (Sıfır Hipotezi):** Günlük kahve/kafein tüketim miktarı ile bireylerin uyku kalitesi ve stres düzeyleri arasında istatistiksel olarak anlamlı bir ilişki yoktur.
+* **$H_1$ (Alternatif Hipotez):** Günlük kahve/kafein tüketim miktarı arttıkça uyku kalitesi anlamlı düzeyde düşmekte ve stres düzeyi artmaktadır.
+
+---
+
+## 📊 Veri Seti Bilgileri
+* **Veri Seti Adı:** Global Coffee Health Dataset
+* **Kaynak:** [Kaggle - Global Coffee Health Dataset](https://www.kaggle.com/datasets/laksikatharmalingam/global-coffee-health-dataset)
+* **İncelenen Temel Değişkenler:**
+  * **Bağımsız Değişkenler:** Günlük kahve tüketimi, kafein miktarı (mg), yaş, cinsiyet, fiziksel aktivite düzeyi.
+  * **Bağımlı Değişkenler:** Uyku kalitesi, uyku süresi, stres seviyesi, kalp atış hızı / sağlık göstergeleri.
+
+---
+
+## 🛠️ Kullanılan Araçlar ve Teknolojiler
+* **Sürüm Kontrolü:** Git & GitHub
+* **Geliştirme Ortamı:** Visual Studio Code & Google Colab
+* **Programlama Dili & Kütüphaneler:** Python (`pandas`, `numpy`, `matplotlib`, `seaborn`, `scipy`)
+* **Kaynakça ve Raporlama:** Zotero, Overleaf (LaTeX), Microsoft Word
+
+---
+
+## 📁 Depo Yapısı
+```text
+├── data/               # Veri seti açıklamaları ve örnek veri dosyaları
+├── notebooks/          # Google Colab / Jupyter Notebook veri analizi dosyaları (.ipynb)
+├── diagrams/           # Use Case, Class ve Activity diyagramları
+├── docs/               # Literatür taraması notları ve kaynakça (.bib)
+└── README.md           # Proje genel tanıtım ve araştırma dokümantasyonu
