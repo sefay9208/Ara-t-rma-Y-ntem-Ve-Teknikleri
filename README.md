@@ -50,3 +50,9 @@ Günümüzde kahve tüketimi günlük yaşamın ayrılmaz bir parçası haline g
 ├── diagrams/           # Use Case, Class ve Activity diyagramları
 ├── docs/               # Literatür taraması notları ve kaynakça (.bib)
 └── README.md           # Proje genel tanıtım ve araştırma dokümantasyonu
+
+
+## 👤 Projeyi Hazırlayan
+* **Ad Soyad:** Sefa Yıldırım
+* **Üniversite / Bölüm:** Marmara Üniversitesi – Bilgisayar Programcılığı
+* **Ders:** Araştırma Yöntem ve Teknikleri
